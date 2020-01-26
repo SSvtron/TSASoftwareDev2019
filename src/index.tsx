@@ -3,16 +3,15 @@ import * as ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
-// Firebase App (the core Firebase SDK) is always required and
-// must be listed before other Firebase SDKs
-var firebase = require('firebase/app');
+// import the core Firebase SDK
+import * as firebase from 'firebase';
 
-// Add the Firebase products that you want to use
-require('firebase/auth');
-require('firebase/firestore');
+// import services we're gonna use
+import "firebase/auth";
+import "firebase/firestore";
 
 // TODO: Replace the following with your app's Firebase project configuration
-var firebaseConfig = {
+const firebaseConfig = {
 	apiKey: 'AIzaSyAaivfEfCkBl5UR6bJqqlwhDhlceFzrxJA',
 	authDomain: 'studyzone-official.firebaseapp.com',
 	databaseURL: 'https://studyzone-official.firebaseio.com',
@@ -23,7 +22,6 @@ var firebaseConfig = {
 	measurementId: 'G-FX04ERNDHY'
 };
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
