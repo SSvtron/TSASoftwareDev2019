@@ -4,11 +4,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
 // import the core Firebase SDK
-import * as firebase from 'firebase';
-
-// import services we're gonna use
-import "firebase/auth";
-import "firebase/firestore";
+import * as firebase from 'firebase/app';
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
