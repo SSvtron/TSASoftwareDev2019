@@ -26,8 +26,8 @@ ReactDOM.render(
 firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>, document.getElementById('root'));
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>, document.getElementById('root'));
 
 firebase.analytics();
