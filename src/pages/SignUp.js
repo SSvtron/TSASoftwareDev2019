@@ -33,6 +33,7 @@ class SignUp extends React.PureComponent {
                 var errorCode = error.code;
                 var errorMessage = error.message;
             });
+        console.log(this.state.gender);
     };
 
     render() {
@@ -51,7 +52,7 @@ class SignUp extends React.PureComponent {
                                                 <input
                                                     className='input--style-4'
                                                     type='text'
-                                                    name='first_name'
+                                                    name='first'
                                                     value={this.state.first}
                                                     onChange={(e) => this.handleChange(e)}
                                                 />
@@ -63,7 +64,7 @@ class SignUp extends React.PureComponent {
                                                 <input
                                                     className='input--style-4'
                                                     type='text'
-                                                    name='last_name'
+                                                    name='last'
                                                     value={this.state.last}
                                                     onChange={(e) => this.handleChange(e)}
                                                 />
@@ -78,7 +79,7 @@ class SignUp extends React.PureComponent {
                                                     <input
                                                         className='input--style-4 js-datepicker'
                                                         type='password'
-                                                        name='pwd'
+                                                        name='password'
                                                         value={this.state.password}
                                                         onChange={(e) => this.handleChange(e)}
                                                     />
