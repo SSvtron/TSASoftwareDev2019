@@ -1,6 +1,6 @@
 import * as React from "react";
-import {withRouter} from "react-router-dom";
-import {NavLink} from "react-router-dom";
+import { withRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import '../styles/signup.css';
 
@@ -69,13 +69,18 @@ class SignUp extends React.PureComponent {
                                         </div>
                                     </div>
                                     <div className="input-group">
-                                        <label className="label">Subject</label>
+                                        <label className="label">Grade</label>
                                         <div className="rs-select2 js-select-simple select--no-search">
                                             <select name="subject">
                                                 <option disabled="disabled" selected="selected">Choose option</option>
-                                                <option>Subject 1</option>
-                                                <option>Subject 2</option>
-                                                <option>Subject 3</option>
+                                                <option>6th</option>
+                                                <option>7th</option>
+                                                <option>8th</option>
+                                                <option>9th</option>
+                                                <option>10th</option>
+                                                <option>11th</option>
+                                                <option>12th</option>
+
                                             </select>
                                             <div className="select-dropdown"></div>
                                         </div>
