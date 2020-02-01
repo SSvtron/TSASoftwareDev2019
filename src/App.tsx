@@ -1,28 +1,21 @@
-import * as React from "react";
+import * as React from 'react';
 import {
-    Switch,
-    Route,
-} from "react-router-dom";
-import Login from "./pages/Login";
-import SignUp from "./pages/SignUp";
-
-
-
+	Switch,
+	Route
+} from 'react-router-dom';
+import LoginPage from './pages/Login';
+import SignUp from './pages/SignUp';
 import './styles/index.css';
 
 class App extends React.PureComponent {
-    render() {
-        return (
-            <Switch>
-                <Route exact path="/" component={SignUp} />
-                <Route path="/signin" component={Login} />
-            </Switch>
-
-
-        );
-    }
+	render() {
+		return (
+			<Switch>
+				<Route exact path='/' component={SignUp} />
+				<Route path='/signin' component={LoginPage} />
+			</Switch>
+		);
+	}
 }
-
-
 
 export default App;

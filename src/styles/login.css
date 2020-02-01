@@ -3,8 +3,8 @@
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -131,7 +131,7 @@ iframe {
 }
 
 .container-login100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -201,6 +201,11 @@ iframe {
   width: 100%;
   z-index: 1;
   margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  padding: .3rem;
 }
 
 .input100 {
